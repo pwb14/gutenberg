@@ -1,0 +1,1 @@
+add a right click option where you can highlight a sentence and select a citation type, mla etc.
