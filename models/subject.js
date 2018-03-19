@@ -5,7 +5,8 @@ var Schema = mongoose.Schema;
 var SubjectSchema = new Schema(
   {
     description: {type: String, required: true}
-  }
+  },
+  {collection: 'subject'}
 );
 
 // Virtual for book's URL

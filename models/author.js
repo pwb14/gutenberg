@@ -8,7 +8,8 @@ var AuthorSchema = new Schema(
     date_of_birth: {type: String},
     date_of_death: {type: String},
     wiki_link: {type: String, required: false, max: 100},
-  }
+  },
+  {collection: 'author'}
 );
 
 // Virtual for author's URL

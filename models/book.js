@@ -7,11 +7,13 @@ var BookSchema = new Schema(
     title: {type: String, required: true},
     author: {type: Schema.ObjectId, ref: 'Author', required: true},
     language: {type: Schema.ObjectId, ref: 'Language', required: true},
-    subjects: [ {type: mongoose.Schema.ObjectId, ref: 'Subject'}],
-    number: {type: Number, required: true}
+    subjects: [ {type: Schema.ObjectId, ref: 'Subject'}],
+    number: {type: Number, required: true},
+    // fileHash: {type}
     // summary: {type: String, required: true},
     // published date
-  }
+  },
+  {collection: 'book'}
 );
 
 // Virtual for book's URL
